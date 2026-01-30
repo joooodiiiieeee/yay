@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me</title>
+  <link rel="stylesheet" href="MAIN.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+  
+  <header>
+    <nav class="navbar section-content">
+      <a href="index.html" class="nav-logo">
+        <h2 class="logo-text">Jodie</h2>
+      </a>
+      
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="MAIN.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="achieve.html" class="nav-link active">Achievements</a></li>
+        <li class="nav-item"><a href="activities.html" class="nav-link">Quest</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <p><div style="position: relative; width: 100%; height: 0; padding-top: 224.8902%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAG_195XjKQ/-tMgbXCT0Fk2kaVBFNvAxQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG_195XjKQ&#x2F;-tMgbXCT0Fk2kaVBFNvAxQ&#x2F;view?utm_content=DAG_195XjKQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Copy of Copy of Jodieyay</a> by jodiemae dapusog</p>
+      </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Select all internal links
+      const links = document.querySelectorAll('a.nav-link');
+      
+      links.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // Stop default immediate navigation
+          
+          const href = this.getAttribute('href'); // Get the link target
+          
+          document.body.classList.add('fade-out'); // Start fade-out
+          
+          // Wait for the fade-out duration, then navigate
+          setTimeout(() => {
+            window.location.href = href;
+          }, 500); // 500ms = same as CSS transition
+        });
+      });
+    </script>
